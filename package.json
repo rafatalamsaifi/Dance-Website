@@ -5,9 +5,9 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.18.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.18",
+    "pug": "^3.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +17,14 @@
     "perfect"
   ],
   "author": "Rafat Alam Saifi",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafatalamsaifi/Dance-Website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rafatalamsaifi/Dance-Website/issues"
+  },
+  "homepage": "https://github.com/rafatalamsaifi/Dance-Website#readme"
 }

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@100&family=Licorice&family=Oxygen:wght@300&family=Titan+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Josefin+Sans:wght@100&family=Licorice&family=Oxygen:wght@300&family=Teko:wght@300&family=Titan+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +6,8 @@
 }
 #navbar{
     padding: 10px 10px;
-    font-family: 'Titan One', cursive;
-    background-color: black;
+    font-family: 'Acme', sans-serif;
+    background-color: rgb(188 141 141);
     
 }
 #navbar ul {
@@ -19,20 +18,48 @@
 
 #navbar li {
     list-style: none;
+    padding: 0px 30px;
 }
 
 #navbar li a {
     text-decoration: none;
-    padding: 10px 30px;
     cursor: pointer;
-    font-size: large;
-    color: white;
+    font-size: 21px;
+    color: black;
 }
 
 #introSection {
-    height: 300px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    background-image: url('/static/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    padding-bottom: 231px;
+}
+#maindiv {
+    display: flex;
+    flex-direction: row;
+}
 
+div.big{
+    line-height: 23px;
+    padding-right: 7px;
+}
+
+div.name{
+    color: #e85b5b;
+}
+
+div.small{
+    font-size: 2rem;;
 }
 
 #sponsorsSection {
