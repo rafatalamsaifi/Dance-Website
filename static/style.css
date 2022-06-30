@@ -7,13 +7,32 @@
 #navbar{
     padding: 10px 10px;
     font-family: 'Acme', sans-serif;
-    background-color: rgb(188 141 141);
+    background-color: #e85b5b;
+    position: fixed;
+    width: 100%;
     
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    margin: 0px 10px;
+}
+#logo img{
+    height: 50px;
+    filter: brightness(100);
+    align-self: left;
+    margin: 0px 10px;
+
 }
 #navbar ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 #navbar li {
@@ -25,6 +44,10 @@
     text-decoration: none;
     cursor: pointer;
     font-size: 21px;
+    color: white;
+}
+
+#navbar li a:hover {
     color: black;
 }
 
@@ -41,9 +64,14 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    /* position: sticky;
+    top: 0;
+    width: 100%; */
     height: 600px;
     padding-bottom: 231px;
+    /* z-index: -1; */
 }
+
 #maindiv {
     display: flex;
     flex-direction: row;
@@ -62,15 +90,85 @@ div.small{
     font-size: 2rem;;
 }
 
+#missionSection{
+    height: 300px;
+    background-color: rgb(248, 240, 240);
+    text-align: center;
+    padding: 30px 10px;
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+}
+
+div.card{
+    width: 20%;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 28px 14px;
+    height: 180px;
+    border-radius: 5px;
+    font-family: 'Teko', sans-serif;
+    background-color: rgb(251 201 201);
+}
+
+.card h3{
+    margin: 10px auto;
+    font-size: 25px;
+    color: black;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 100px;
+    padding: 0 14px;
+}
+.card-img img{
+    height: 90px;
+    /* width: 50px; */
+}
+
+.mid img{
+    width: 72px;
+}
+.card-content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: #e85b5b;
+}
+
 #sponsorsSection {
     height: 300px;
-    background-color: blue;
-
+    background-color: rgb(211, 176, 196);
+    text-align: center;
+    padding: 30px 10px;
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
 }
 
-#footer {
-    height: 100px;
-    background-color: black;
+#sponsors{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    max-width: 1000px;
+    margin: 28px auto;
+    justify-content: center;
+}
+#sponsors img{
+    padding: 0px 40px;
+}
+
+#footer {display: flex;
+    height: 50px;
     color: white;
-
+    background-color: black;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px 10px; */
+    font-family: 'Acme', sans-serif;
 }
+

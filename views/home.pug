@@ -1,10 +1,10 @@
-doctype html
-html
-  head
-    title Urban Dance Website
+extends base.pug
+block scripts
+    scripts(src="../static/index.js")
+block style
     style
       include ../static/style.css
-  body
+block content
     nav#navbar
       ul 
         div#logo
@@ -52,9 +52,3 @@ html
         img(src="../static/sp1.png", alt="sponsor image", class="spImage")
         img(src="../static/sp2.png", alt="sponsor image", class="spImage")
         img(src="../static/sp3.png", alt="sponsor image", class="spImage")
-
-    
-    footer#footer
-      | Copyright &copy; 2022 Urban-Dance-Academy | Created by Rafat Alam Saifi
-    script
-      include ../static/index.js
