@@ -1,21 +1,10 @@
 extends base.pug
 block scripts
-    scripts(src="../static/index.js")
+    script(src="../static/index.js")
 block style
     style
       include ../static/style.css
 block content
-    nav#navbar
-      ul 
-        div#logo
-          img(src="../static/logolast.png")
-          | UDA
-        li #[a(href="/") Home]
-        li #[a(href="/") About]
-        li #[a(href="/") Services]
-        li #[a(href="/") Class Info]
-        li #[a(href="/") Contact us]
-
     section#introSection
       div#maindiv
         div.big Welcome to 

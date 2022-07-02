@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Josefin+Sans:wght@100&family=Licorice&family=Oxygen:wght@300&family=Teko:wght@300&family=Titan+One&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#navbar{
+
+#navbar {
     padding: 10px 10px;
     font-family: 'Acme', sans-serif;
     background-color: #e85b5b;
-    position: fixed;
     width: 100%;
-    
+    position: fixed;
+    top: 0;
 }
 
 #logo {
@@ -21,13 +23,15 @@
     font-size: 21px;
     margin: 0px 10px;
 }
-#logo img{
+
+#logo img {
     height: 50px;
     filter: brightness(100);
     align-self: left;
     margin: 0px 10px;
 
 }
+
 #navbar ul {
     display: flex;
     flex-direction: row;
@@ -59,17 +63,14 @@
     color: white;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
     background-image: url('/static/bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    /* position: sticky;
-    top: 0;
-    width: 100%; */
+    width: 100%;
     height: 600px;
     padding-bottom: 231px;
-    /* z-index: -1; */
+    margin-top: 70px;
 }
 
 #maindiv {
@@ -77,20 +78,21 @@
     flex-direction: row;
 }
 
-div.big{
+div.big {
     line-height: 23px;
     padding-right: 7px;
 }
 
-div.name{
+div.name {
     color: #e85b5b;
 }
 
-div.small{
-    font-size: 2rem;;
+div.small {
+    font-size: 2rem;
+    ;
 }
 
-#missionSection{
+#missionSection {
     height: 300px;
     background-color: rgb(248, 240, 240);
     text-align: center;
@@ -99,7 +101,7 @@ div.small{
     font-size: 25px;
 }
 
-div.card{
+div.card {
     width: 20%;
     display: inline-block;
     border: 2px solid black;
@@ -110,30 +112,33 @@ div.card{
     background-color: rgb(251 201 201);
 }
 
-.card h3{
+.card h3 {
     margin: 10px auto;
     font-size: 25px;
     color: black;
 }
 
-.card-box{
+.card-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.card-img{
+
+.card-img {
     height: 100px;
     padding: 0 14px;
 }
-.card-img img{
+
+.card-img img {
     height: 90px;
     /* width: 50px; */
 }
 
-.mid img{
+.mid img {
     width: 72px;
 }
-.card-content{
+
+.card-content {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     padding: 5px 10px;
@@ -149,7 +154,7 @@ div.card{
     font-size: 25px;
 }
 
-#sponsors{
+#sponsors {
     display: flex;
     flex-direction: row;
     height: 150px;
@@ -157,18 +162,17 @@ div.card{
     margin: 28px auto;
     justify-content: center;
 }
-#sponsors img{
+
+#sponsors img {
     padding: 0px 40px;
 }
 
-#footer {display: flex;
+#footer {
+    display: flex;
     height: 50px;
     color: white;
     background-color: black;
-    /* text-align: center; */
     justify-content: center;
     align-items: center;
-    /* padding: 10px 10px; */
     font-family: 'Acme', sans-serif;
 }
-
