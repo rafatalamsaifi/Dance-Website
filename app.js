@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 main().catch(err=>console.log(err));
 async function main(){
@@ -44,5 +44,5 @@ app.post('/contact', (req, res)=>{
 });
 
 app.listen(port, ()=>{
-    console.log(`This application started successfully on port ${port}`)
+    console.log(`This application started successfully on port ${app.get('port')}`)
 });
